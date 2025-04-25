@@ -1,0 +1,79 @@
+$primary-color: #3498db;
+$secondary-color: #ecf0f1;
+$text-color: #333;
+$background-color: #f7f9fc;
+
+.schedule-agenda-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  height: calc(100vh - 168px);
+
+  .agenda-list {
+    .agenda-item {
+      background-color: $secondary-color;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards ease-in-out;
+
+      .agenda-time {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .session-list {
+        margin-top: 10px;
+
+        .session-item {
+          margin-top: 10px;
+          padding: 12px 16px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+          opacity: 0;
+          transform: translateX(-20px);
+          animation: fadeInRight 0.5s forwards ease-in-out;
+
+          strong {
+            color: darken($primary-color, 10%);
+          }
+
+          p,
+          span {
+            color: $text-color;
+            font-size: 0.95rem;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

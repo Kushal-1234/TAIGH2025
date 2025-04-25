@@ -1,0 +1,34 @@
+$primary-color: #3498db;
+$secondary-color: #ecf0f1;
+$text-color: #333;
+$background-color: #f7f9fc;
+
+.login-main {
+  display: flex;
+  background-color: rgba(53, 53, 53, 0.8);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+
+  .signin-form-container {
+    color: $text-color;
+  }
+
+  .form-field {
+    margin-bottom: 15px;
+
+    .MuiInputBase-root {
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+
+    .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: darken($primary-color, 10%);
+    }
+  }
+}

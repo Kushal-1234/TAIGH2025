@@ -63,6 +63,9 @@ import React, { useEffect } from "react";
 import "./NewsPage.scss";
 
 const news = [
+  `Our paper titled "Artificial Intelligence in COVID-19 Research: A Comprehensive Survey of Innovations, Challenges, and Future Directions" was accepted by Computer Science Review, 2025.`,
+  `Our paper titled "Explainable Convolutional Neural Network for COVID-19 Detection", has been accepted by the 2025 International Conference on Bioinformatics and Computational Biology (BICOB 2025).`,
+  `Our paper titled "Violence Detection from Industrial Surveillance Videos Using Deep Learning" was published at IEEE Access, 2025.`,
   `Our paper titled "A study of bias in gender and racial classification from face images using FaceNet" 
   was accepted at IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2025).`,
   `Our paper titled "Efficient Federated Learning with Multi-Teacher Knowledge Distillation for COVID-19 Detection" was published by 

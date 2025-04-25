@@ -14,9 +14,10 @@ import InfoIcon from "@mui/icons-material/Info";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import GroupsIcon from "@mui/icons-material/Groups";
+// import LogoutIcon from "@mui/icons-material/LogoutOutlined";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 
-const Sidebar = ({ isOpen, toggleSidebar }) => {
+const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
 
@@ -134,6 +135,15 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <Link to="/about" className={isActive("/about") ? "active" : ""}>
               <InfoIcon className="icon" />
               {isOpen && <span>About</span>}
+            </Link>
+          </li> */}
+          {/* <li>
+            <Link
+              onClick={handleLogout}
+              style={{ position: "absolute", bottom: "5%" }}
+            >
+              <LogoutIcon className="icon" />
+              {isOpen && <span>Logout</span>}
             </Link>
           </li> */}
         </ul>

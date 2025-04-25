@@ -90,6 +90,10 @@ const traineesData = {
       name: "Johnson Sidney",
       image: defaultProfileImage,
     },
+    {
+      name: "Zaria Pittman",
+      image: defaultProfileImage,
+    },
   ],
   graduate: [
     {
@@ -104,7 +108,10 @@ const traineesData = {
       name: "Zhiwen He (PhD)",
       image: defaultProfileImage,
     },
-
+    {
+      name: "Hamza Khan (PhD)",
+      image: defaultProfileImage,
+    },
     {
       name: "Kushal Kalyan (Master)",
       image: kushal,

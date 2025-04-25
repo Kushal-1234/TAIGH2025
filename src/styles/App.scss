@@ -1,91 +1,27 @@
-@import "../components/Sidebar.scss";
-
-$app-margin-left: 220px;
-$app-margin-left-closed: 70px;
-
-html {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 body {
-  height: 100%;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4 !important;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f7fa;
 }
 
-#root {
-  height: 100%;
-}
+.hero-section {
+  background: linear-gradient(135deg, #004d7a, #008793);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
 
-.App {
-  display: flex;
-  font-family: Arial, sans-serif;
-  // background: linear-gradient(to left, #171d25, #2c3e50);
-  // background: url(../assets/images/bg1.jpg);
-  // background-color: #f4f4f4;
-
-  .sidebar {
-    flex: 0 0 $app-margin-left;
-    &.closed {
-      flex: 0 0 $app-margin-left-closed;
-    }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
   }
-
-  .content {
-    margin-left: $app-margin-left;
-    // padding: 20px;
-    width: calc(100% - $app-margin-left);
-    // width: 100%;
-    transition: margin-left $transition-duration ease,
-      width $transition-duration ease;
-    background-color: #f4f4f4;
-    display: flex;
-    flex: 1;
-    height: 100vh;
-
-    &.sidebar-closed {
-      margin-left: $app-margin-left-closed;
-      width: calc(100% - $app-margin-left-closed);
-      // width: 100%;
-    }
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
   }
-
-  h1 {
-    color: #333;
-  }
-
-  ul {
-    // list-style-type: none;
-    // padding: 0;
-  }
-
-  li {
-    // margin-bottom: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $primary-color;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .home,
-  .projects,
-  .project-details,
-  .members,
-  .meetings,
-  .tools,
-  .datasets,
-  .contact,
-  .about {
-    margin-bottom: 40px;
+  .hero-subtext {
+    max-width: 600px;
+    margin: 0 auto 24px;
+    font-size: 1rem;
   }
 }
