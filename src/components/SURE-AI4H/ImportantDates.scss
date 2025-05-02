@@ -1,0 +1,79 @@
+$primary-color: #3498db;
+$secondary-color: #ecf0f1;
+$text-color: #333;
+$background-color: #f7f9fc;
+
+.workshop-agenda-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  .agenda-list {
+    .agenda-item {
+      background-color: $secondary-color;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards ease-in-out;
+
+      .agenda-time {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .session-list {
+        margin-top: 15px;
+      }
+
+      .session-item {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: fadeInRight 0.5s forwards ease-in-out;
+
+        p,
+        span,
+        strong {
+          color: $text-color;
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+
+        strong {
+          color: darken($primary-color, 15%);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
